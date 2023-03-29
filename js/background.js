@@ -16,7 +16,7 @@ const images = ["1.jpg", "2.jpg", "3.jpg", "4.jpg"] // 공간안에 문자열
 const randomIndex = Math.floor(Math.random()*4) // Math.floor를 통해 잘라서 사용
 // const randomIndex = Math.floor(Math.random()*images.length)
 
-body.style.backgroundImage = `url(./img/${images[randomIndex]})`;
+body.style.backgroundImage = `url(../img/${images[randomIndex]})`;
 body.style.backgroundSize = "cover";
 
 // 문자열로 넣어져야 한다
