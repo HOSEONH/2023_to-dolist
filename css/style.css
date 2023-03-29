@@ -1,0 +1,143 @@
+@font-face{
+    font-family:'bitbit';
+    src:url('//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff'),url('//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff2') ;
+}
+
+/* 태그에 대한 디자인 */
+h1 {
+    font-family:'bitbit';
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+/* 각각 id에 따른 디자인 */
+#clock {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 30px 0;
+    color: black;
+    /* text-shadow: 0 0 2px black; */
+    text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
+    mix-blend-mode: screen;
+}
+#greeting, #login-form, #todo-form {
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 2px black;
+}
+
+/* todolist 디자인 */
+#todolist {
+    margin: auto; /* 중앙정렬 */
+    max-width: 300px;
+    margin-top: 20px;
+    /* text-align: center; */
+    padding: 0 30px;
+}
+#todolist li {
+    font-family:'bitbit';
+    /* display: flex; */
+    /* justify-content: space-between; */
+    clear: both;
+    margin: 5px 0;
+}
+
+#todolist li button {
+    float: right; /* 버튼을 끝으로 보내기 */
+}
+#todolist li span {
+    /* position: absolute; 버튼을 끝으로 보내기 */
+    /* right: 220px; */
+    margin-top: 5.5px;
+    font-size: 0.7rem;
+    color: white;
+    margin: 0 10px;
+}
+#todolist li {
+    margin: 10px;
+}
+#todolist li input{
+    margin-right: 10px;
+}
+input[type="submit"]  {
+    color: rgb(246, 255, 167);
+}
+li {
+    color: aliceblue;
+    text-shadow: 0 0 2px black;
+}
+
+/* input[type="text"], [type="submit"] */
+input[type="text"] {
+    background-color: transparent; /* 투명 */
+    border: none; /* 테두리선 없애기 */
+    border-bottom: 1px white solid;
+    color: rgb(246, 255, 167);
+    font-family:'bitbit';
+}
+input[type="text"]:focus{
+    outline: none; /*클릭했을 때 테두리도 없애기*/
+    font-family:'bitbit';
+}
+input[type="text"]::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    font-family:'bitbit';
+}
+
+/* 버튼 디자인 */
+input[type="text"]+input[type="submit"] {
+    background-color: rgb(233, 233, 233);
+    border: none;
+    border-radius: 20px;
+    padding: 2px 7px;
+    color: darkgray;
+    font-family:'bitbit';
+}
+#todolist>li>button {
+    background-color: transparent;
+    border: solid rgb(255, 255, 255) 1px;
+    border-radius: 50%;
+    font-family:'bitbit';
+    color: aliceblue;
+    cursor: pointer; /* 손가락 모양으로 바뀐다 */
+    padding: 1px 4px;
+}
+#todolist>li>button:hover {
+    background-color: rgb(230, 230, 230);
+    border: solid rgb(230, 230, 230) 1px;
+    color: rgb(255, 190, 225);
+}
+
+
+/* 버튼에 마우스를 올렸을 때 */
+input[type="text"]+input[type="submit"]:hover {
+    background-color: rgb(229, 251, 255);
+    font-family:'bitbit';
+}
+
+/* 태그를 숨기기 위해 작성 */
+.hidden {
+    display: none;
+}
+
+
+input[type="checkbox"] {
+    appearance: none;
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+input[type="checkbox"]:checked {
+    /* background-color: white; */
+    background-color: transparent;
+    border: 1px solid rgb(255, 107, 107);
+}
+
+#count {
+    color: hsl(0, 0%, 100%);
+    font-family:'bitbit';
+    text-align: center;
+    padding-top: 8px;
+}
